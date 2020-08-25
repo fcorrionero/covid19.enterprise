@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tracking/Infrastructure/UI/Pages/Components/loader.dart';
 import 'package:tracking/Infrastructure/UI/Pages/LoginPage.dart';
 // Import the firebase_core plugin
 import 'package:firebase_core/firebase_core.dart';
@@ -50,7 +51,10 @@ class _CovidAppState extends State<CovidApp>
 
     // Show a loader until FlutterFire is initialized
     if (!_initialized) {
-      //TODO
+      return MaterialApp(
+        title: 'Loading',
+        home: Loader(),
+      );
     }
 
     return MaterialApp(
