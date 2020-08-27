@@ -1,4 +1,4 @@
 abstract class AuthInterface
 {
-  Future<bool> login(String user, String password);
+  Future<bool> isLogged(String user, String password);
 }

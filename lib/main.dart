@@ -51,10 +51,10 @@ class _CovidAppState extends State<CovidApp>
 
     // Show a loader until FlutterFire is initialized
     if (!_initialized) {
-      return MaterialApp(
-        title: 'Loading',
-        home: Loader(),
-      );
+//      return MaterialApp(
+//        title: 'Loading',
+//        home: Loader(),
+//      );
     }
 
     return MaterialApp(
